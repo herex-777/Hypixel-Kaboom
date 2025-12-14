@@ -1,0 +1,30 @@
+name: Kaboom
+version: 1.0
+main: me.herex.hypixel.kaboom.KaboomPlugin
+api-version: '1.13'
+description: Launch players into the air with a kaboom effect!
+author: Herex
+website: www.farepixel.fun
+
+commands:
+  kaboom:
+    description: Launch players into the air
+    usage: |
+      /kaboom - Launch all players
+      /kaboom <player> - Launch specific player
+      /kaboom reload - Reload configuration
+    aliases: [kb, boom]
+
+permissions:
+  kaboom.use:
+    description: Allows use of kaboom command
+    default: op
+  kaboom.reload:
+    description: Allows reloading configuration
+    default: op
+  kaboom.exempt:
+    description: Player cannot be kaboomed
+    default: false
+  kaboom.nocooldown:
+    description: Bypass cooldown restrictions
+    default: op

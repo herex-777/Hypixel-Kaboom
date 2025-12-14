@@ -1,0 +1,44 @@
+check-for-updates: true
+show-colors-in-console: true
+use-kaboom.exempt: true
+lightning-effect: true
+kaboom-power: 2.0  # Velocity power for launching players
+
+#
+# If you dont want a prefix change the string to ""
+#
+prefix: "&c[Kaboom] "
+no-permission: "&cOnly admins can use this command"
+reload-message: "&aPlugin has been reloaded"
+exempt-message: "You cannot kaboom %player% because he has kaboom.exempt"
+player-not-found: "&cCould not find player &e%player%"
+
+
+#
+#    The command will ONLY work on these worlds
+#    If list is empty, command works in ALL worlds
+#
+enable-worlds:
+  - "world"
+  - "survival"
+  - "bedwars"
+  # Add more worlds where kaboom should work
+
+
+#
+#    Use %player% for the person who executed the kaboom command
+#    If you dont want a title / subtitle change the string to ""
+#
+title-for-kaboomed-players:
+  enabled: true
+  title: "&eYou have been kaboomed"
+  subtitle: "&eby &c%player%"
+
+
+#
+#    Use %player% for the person who executed the kaboom command
+#    Note: This doesnt use the prefix
+#
+message-for-kaboomed-players:
+  enabled: true
+  message: "&eYou have been kaboomed by %player%"
